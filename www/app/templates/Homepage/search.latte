@@ -1,0 +1,9 @@
+{block content}
+<h2>Searching for: <code>"{$term|striptags}"</code></h2>
+
+<ol>
+{foreach $results as $result}
+	<li>{$result}</li>
+{/foreach}
+</ol>
+{/block}

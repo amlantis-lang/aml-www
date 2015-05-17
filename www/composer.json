@@ -1,0 +1,36 @@
+{
+	"name": "themarketka/gear-www",
+	"description": "Web presentation of The Gear Programming Language.",
+	"homepage": "http://www.gear-lang.org",
+	"type": "project",
+	"license": ["BSD-2-Clause"],
+	"authors": [
+		{
+			"name": "Markéta Lisová"
+		}
+	],
+	"require": {
+		"php": ">= 5.6.0",
+		"nette/application": "@dev",
+		"nette/bootstrap": "@dev",
+		"nette/caching": "@dev",
+		"nette/component-model": "@dev",
+		"nette/di": "@dev",
+		"nette/finder": "@dev",
+		"nette/forms": "@dev",
+		"nette/http": "@dev",
+		"nette/mail": "@dev",
+		"nette/neon": "@dev",
+		"nette/php-generator": "@dev",
+		"nette/reflection": "@dev",
+		"nette/robot-loader": "@dev",
+		"nette/safe-stream": "@dev",
+		"nette/security": "@dev",
+		"nette/tokenizer": "@dev",
+		"nette/utils": "@dev",
+		"latte/latte": "@dev",
+		"tracy/tracy": "@dev",
+		"janmarek/webloader": "dev-master",
+		"oyejorge/less.php": "@dev"
+	}
+}

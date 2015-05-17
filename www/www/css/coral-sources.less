@@ -1,0 +1,76 @@
+.source-fonts {
+	font-family: Menlo, monospace;
+	white-space: pre;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.tokenized * {
+	.source-fonts;
+}
+.tokenized {
+	overflow: scroll;
+	.source-fonts;
+}
+.keyword {
+	font-weight: bold;
+}
+.operator {
+	font-weight: normal;
+	color: orangered;
+}
+.operator-unspecified-operator {
+	background-color: rgba(255,0,0,0.4);
+}
+.ivariable {
+	font-weight: normal;
+	color: cadetblue;
+}
+.cvariable {
+	font-weight: normal;
+	color: darkmagenta;
+}
+.string {
+	font-weight: normal;
+	color: darkolivegreen;
+}
+.collection {
+	font-weight: normal;
+	color: darkred;
+}
+.symbol {
+	font-weight: bolder;
+	color: blueviolet;
+}
+.constant {
+	font-weight: bolder;
+	color: darkred;
+}
+.numeric {
+	font-weight: normal;
+	color: darkcyan;
+}
+.lcomment, .bcomment {
+	font-weight: normal;
+	color: dimgray;
+}
+.bdcomment {
+	font-weight: normal;
+	color: indianred;
+}
+.function-name {
+	font-weight: bolder;
+	color: darkslategrey;
+}
+.language-symbol {
+	font-weight: normal;
+}
+.goto-label {
+	color: brown;
+}
+.type-placeholder {
+	color: brown;
+}
+.regexp {
+	color: darkorchid;
+}

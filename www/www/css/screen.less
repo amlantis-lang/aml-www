@@ -1,0 +1,203 @@
+.sans-serif-fonts {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.serif-fonts {
+	font-family: Palatino, Cambria, serif;
+}
+
+.monospace-fonts {
+	font-family: Menlo, Consolas, monospace;
+}
+
+body {
+	background-color: #dfdfdf;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	.sans-serif-fonts;
+}
+
+header {
+	overflow: hidden;
+	background-color: black;
+	height: 66px;
+	padding-left: 64px;
+	padding-right: 64px;
+}
+
+.footer-columns {
+	margin-left: 64px;
+	margin-right: 64px;
+}
+
+header h1 {
+	color: white;
+}
+
+header h1 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#header-left {
+	height: 66px;
+	line-height: 66px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#header-right {
+	height: 66px;
+	line-height: 66px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#search-field {
+	font-size: larger;
+}
+
+#main-content {
+	min-height: 100%;
+	background-color: #eee;
+	padding-left: 64px;
+	padding-right: 64px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+	border-top: 1px solid #888;
+	.sans-serif-fonts;
+}
+
+footer {
+	width: 100%;
+	overflow: hidden;
+	background-color: #dfdfdf;
+	border-top: 1px solid #888;
+	padding-top: 32px;
+	.serif-fonts;
+}
+
+h1, h2 {
+	.serif-fonts;
+}
+
+footer h2 {
+	.sans-serif-fonts;
+}
+
+h1 {
+	font-size: 28px;
+	text-shadow: 0 1px 0 #333;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.standalone-heading {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #888;
+}
+
+strong {
+	font-weight: bold;
+}
+
+nav ul li {
+	list-style-type: square;
+}
+
+pre, code {
+	.monospace-fonts;
+	tab-size: 4;
+}
+
+.github-link p a {
+	line-height: 32px !important;
+	height: 32px;
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	top: 2px;
+}
+
+.github-link p img {
+	vertical-align: middle;
+}
+
+/* home screen */
+
+.content-column {
+	p {
+		font-style: italic;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	dl {
+		dt {
+			margin-top: 4px;
+			margin-bottom: 4px;
+			font-size: 16px;
+		}
+		dd {
+			margin-top: 4px;
+			margin-bottom: 8px;
+			margin-left: 16px;
+			font-style: italic;
+			font-size: 14px;
+			color: #555;
+		}
+	}
+}
+
+/* Nette defaults */
+
+#ajax-spinner {
+	margin: 15px 0 0 15px;
+	padding: 13px;
+	background: white url('../images/spinner.gif') no-repeat 50% 50%;
+	font-size: 0;
+	z-index: 123456;
+	display: none;
+}
+
+div.flash {
+	color: black;
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+a[href^="error:"] {
+	background: red;
+	color: white;
+}
+
+form th, form td {
+	vertical-align: top;
+	font-weight: normal;
+}
+
+form th {
+	text-align: right;
+}
+
+form .required label {
+	font-weight: bold;
+}
+
+form .error {
+	color: #D00;
+	font-weight: bold;
+}
+
+html.js .jshidden {
+	display: none;
+}

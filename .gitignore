@@ -1,0 +1,13 @@
+www/log/* 
+www/temp/* 
+www/vendor/* 
+!.gitignore 
+!.htaccess 
+!web.config
+app/config/config.local.neon
+.idea
+!.gitkeep
+www/www/webtemp/*.css
+www/www/webtemp/*.js
+
+

@@ -1,0 +1,87 @@
+{**
+ * My Application layout template.
+ *
+ * @param string   $basePath web base path
+ * @param string   $robots   tell robots how to index the content of a page (optional)
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Gear is a programming language project aiming to be clean-code friendly">
+	<meta name="keywords" content="gear programming language object oriented functional expressive modular dynamic hybrid open source clean code">
+	<meta name="robots" content="{$robots}" n:ifset="$robots">
+
+	<title>{block title|striptags}The Gear Programming Language{/block}</title>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	{control cssAssetsPipeline 'reset.css', 'unsemantic.css', 'screen.less', 'coral-sources.less'}
+	{control cssPrintAssetsPipeline 'print.css'}
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+	{block head}{/block}
+</head>
+
+<body>
+	<script> document.documentElement.className+=' js' </script>
+
+	<header>
+		<section id="header-left" class="grid-70">
+			{block heading}
+				<h1 title="The Gear Programming Language"><a href="{link Homepage:default}">The Gear Programming Language</a></h1>
+			{/block}
+		</section>
+		<section id="header-right" class="grid-30">
+			<form action="{link Homepage:search}">
+				<div>
+					<input type="search" id="search-field" name="search" placeholder="Search" results="5" autosave="true" />
+				</div>
+			</form>
+		</section>
+	</header>
+	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+
+	<section id="main-content" class="grid-container">
+	{include #content}
+
+	</section>
+
+	{block scripts}
+	<script src="{$basePath}/js/jquery.js"></script>
+	<script src="{$basePath}/js/netteForms.js"></script>
+	<script src="{$basePath}/js/main.js"></script>
+	{/block}
+
+	<footer>
+		<section class="footer-columns grid-container">
+			<section class="footer-column grid-50">
+				<ul>
+					<li>&copy; 2012 &ndash; {date('Y')} Markéta Lisová</li>
+					<li class="github-link">
+						<p>
+							<img src="/images/GitHub-Mark-32px.png" />
+							<a href="https://github.com/gear-lang/">check it out on GitHub</a>
+						</p>
+					</li>
+				</ul>
+			</section>
+			<section class="footer-column grid-50">
+				<ul>
+					<li>The content is available under <a href="{link Homepage:license}">a simple permissive license</a>.</li>
+				</ul>
+			</section>
+		</section>
+	</footer>
+
+	{block finalizer}
+	<a href="https://github.com/gear-lang" rel="alternate">
+		<img style="position: absolute; top: 0; right: 0; border: 0;"
+				src="{$githubRibbon}"
+				alt="Fork me on GitHub"/>
+	</a>
+	{/block}
+</body>
+</html>

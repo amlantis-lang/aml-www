@@ -1,0 +1,15 @@
+{block content}
+<ul>
+	{foreach $directoryEntries as $entry}
+		<li>
+			{if $entry['kind'] === 'up'}
+				..
+			{elseif $entry['kind'] === 'coral'}
+				<a n:href="Learn:printDoc path => $entry['path']">File {$entry['name']}</a>
+			{elseif $entry['kind'] === 'module'}
+				<a n:href="Learn:printDoc path => $entry['path']">Module {$entry['name']}</a>
+			{/if}
+		</li>
+	{/foreach}
+</ul>
+{/block}
