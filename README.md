@@ -1,8 +1,8 @@
-The Gear Programming Language
+The Amlantis Programming Language Family
 =====
 
-Open source object-oriented language with a lot of cool features.
+Open source programming languages.
 
 ## Twitter
 
-[@gearlang](https://twitter.com/gearlang)
+[@amlantislang](https://twitter.com/amlantislang)
