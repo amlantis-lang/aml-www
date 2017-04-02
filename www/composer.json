@@ -1,36 +1,40 @@
 {
-	"name": "themarketka/gear-www",
-	"description": "Web presentation of The Gear Programming Language.",
-	"homepage": "http://www.gear-lang.org",
+	"name": "amlantis-lang/amlantis-www",
+	"description": "Web presentation of The Amlantis Programming Languages.",
+	"homepage": "http://www.amlantis-lang.org",
 	"type": "project",
-	"license": ["BSD-2-Clause"],
+	"license": ["BSD-2.0"],
 	"authors": [
 		{
 			"name": "Markéta Lisová"
 		}
 	],
 	"require": {
-		"php": ">= 5.6.0",
-		"nette/application": "@dev",
-		"nette/bootstrap": "@dev",
-		"nette/caching": "@dev",
-		"nette/component-model": "@dev",
-		"nette/di": "@dev",
-		"nette/finder": "@dev",
-		"nette/forms": "@dev",
-		"nette/http": "@dev",
-		"nette/mail": "@dev",
-		"nette/neon": "@dev",
-		"nette/php-generator": "@dev",
-		"nette/reflection": "@dev",
-		"nette/robot-loader": "@dev",
-		"nette/safe-stream": "@dev",
-		"nette/security": "@dev",
-		"nette/tokenizer": "@dev",
-		"nette/utils": "@dev",
-		"latte/latte": "@dev",
-		"tracy/tracy": "@dev",
-		"janmarek/webloader": "dev-master",
-		"oyejorge/less.php": "@dev"
-	}
+		"php": ">= 7.0.0",
+		"nette/application": "~2.4",
+		"nette/bootstrap": "~2.4",
+		"nette/caching": "~2.5",
+		"nette/component-model": "~2.3",
+		"nette/di": "~2.4",
+		"nette/finder": "~2.4",
+		"nette/forms": "~2.4",
+		"nette/http": "~2.4",
+		"nette/mail": "~2.4",
+		"nette/neon": "~2.4",
+		"nette/php-generator": "~2.4",
+		"nette/reflection": "~2.4",
+		"nette/robot-loader": "~2.4",
+		"nette/safe-stream": "~2.3",
+		"nette/security": "~2.4",
+		"nette/tokenizer": "^2.2",
+		"nette/utils": "~2.4",
+		"latte/latte": "~2.4",
+		"tracy/tracy": "~2.4",
+		"janmarek/webloader": "~2.5",
+		"oyejorge/less.php": "~1.7"
+	},
+	"require-dev": {
+		"nette/tester": "^1.6"
+	},
+	"minimum-stability": "stable"
 }

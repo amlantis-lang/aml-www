@@ -9,14 +9,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Gear is a programming language project aiming to be clean-code friendly">
-	<meta name="keywords" content="gear programming language object oriented functional expressive modular dynamic hybrid open source clean code">
+	<meta name="description" content="Amlantis is a programming language project aiming to be clean-code friendly">
+	<meta name="keywords" content="amlantis programming language object oriented functional expressive modular dynamic hybrid open source clean code">
 	<meta name="robots" content="{$robots}" n:ifset="$robots">
 
-	<title>{block title|striptags}The Gear Programming Language{/block}</title>
+	<title>{block title|striptags}The Amlantis Programming Language Family{/block}</title>
 
 	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="/js/html5shiv.min.js"></script>
 	<![endif]-->
 
 	{control cssAssetsPipeline 'reset.css', 'unsemantic.css', 'screen.less', 'coral-sources.less'}
@@ -31,7 +31,7 @@
 	<header>
 		<section id="header-left" class="grid-70">
 			{block heading}
-				<h1 title="The Gear Programming Language"><a href="{link Homepage:default}">The Gear Programming Language</a></h1>
+				<h1 title="The Amlantis Programming Language Family"><a href="{link Homepage:default}">The Amlantis Programming Language Family</a></h1>
 			{/block}
 		</section>
 		<section id="header-right" class="grid-30">
@@ -62,8 +62,8 @@
 					<li>&copy; 2012 &ndash; {date('Y')} Markéta Lisová</li>
 					<li class="github-link">
 						<p>
-							<img src="/images/GitHub-Mark-32px.png" />
-							<a href="https://github.com/gear-lang/">check it out on GitHub</a>
+							<img src="/images/GitHub-Mark-32px.png" srcset="/images/GitHub-Mark-64px.png 2x" />
+							<a href="https://github.com/amlantis-lang/" style="font-family: 'Fira Code', Hack, Menlo, Consolas, monospace">check it out on GitHub</a>
 						</p>
 					</li>
 				</ul>
@@ -77,11 +77,11 @@
 	</footer>
 
 	{block finalizer}
-	<a href="https://github.com/gear-lang" rel="alternate">
-		<img style="position: absolute; top: 0; right: 0; border: 0;"
-				src="{$githubRibbon}"
-				alt="Fork me on GitHub"/>
-	</a>
+		<div class="github-fork-ribbon-wrapper right">
+			<div class="github-fork-ribbon">
+				<a href="https://github.com/amlantis-lang">Fork me on GitHub</a>
+			</div>
+		</div>
 	{/block}
 </body>
 </html>

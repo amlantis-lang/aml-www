@@ -1,203 +1,334 @@
 .sans-serif-fonts {
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Linux Biolinum", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .serif-fonts {
-	font-family: Palatino, Cambria, serif;
+  font-family: "Linux Libertine", Palatino, Cambria, serif;
 }
 
 .monospace-fonts {
-	font-family: Menlo, Consolas, monospace;
+  font-family: 'Fira Code', Hack, Menlo, Consolas, monospace;
 }
 
 body {
-	background-color: #dfdfdf;
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	.sans-serif-fonts;
+  background-color: #dfdfdf;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  .sans-serif-fonts;
 }
 
 header {
-	overflow: hidden;
-	background-color: black;
-	height: 66px;
-	padding-left: 64px;
-	padding-right: 64px;
+  overflow: hidden;
+  background-color: black;
+  height: 66px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 .footer-columns {
-	margin-left: 64px;
-	margin-right: 64px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 header h1 {
-	color: white;
+  color: white;
 }
 
 header h1 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 #header-left {
-	height: 66px;
-	line-height: 66px;
-	margin-left: 0;
-	margin-right: 0;
+  height: 66px;
+  line-height: 66px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #header-right {
-	height: 66px;
-	line-height: 66px;
-	margin-left: 0;
-	margin-right: 0;
+  height: 66px;
+  line-height: 66px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #search-field {
-	font-size: larger;
+  font-size: larger;
 }
 
 #main-content {
-	min-height: 100%;
-	background-color: #eee;
-	padding-left: 64px;
-	padding-right: 64px;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	margin-left: 0;
-	margin-right: 0;
-	max-width: 100%;
-	border-top: 1px solid #888;
-	.sans-serif-fonts;
+  min-height: 100%;
+  background-color: #eee;
+  padding: 16px 64px;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  border-top: 1px solid #888;
+  .sans-serif-fonts;
 }
 
 footer {
-	width: 100%;
-	overflow: hidden;
-	background-color: #dfdfdf;
-	border-top: 1px solid #888;
-	padding-top: 32px;
-	.serif-fonts;
+  width: 100%;
+  overflow: hidden;
+  background-color: #dfdfdf;
+  border-top: 1px solid #888;
+  padding-top: 32px;
+  .serif-fonts;
 }
 
 h1, h2 {
-	.serif-fonts;
+  .serif-fonts;
 }
 
 footer h2 {
-	.sans-serif-fonts;
+  .sans-serif-fonts;
 }
 
 h1 {
-	font-size: 28px;
-	text-shadow: 0 1px 0 #333;
+  font-size: 28px;
+  text-shadow: 0 1px 0 #333;
 }
 
 h2 {
-	font-size: 22px;
-	font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .standalone-heading {
-	margin-top: 16px;
-	margin-bottom: 16px;
-	border-bottom: 1px solid #888;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #888;
 }
 
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 nav ul li {
-	list-style-type: square;
+  list-style-type: square;
 }
 
 pre, code {
-	.monospace-fonts;
-	tab-size: 4;
+  .monospace-fonts;
+  tab-size: 4;
 }
 
 .github-link p a {
-	line-height: 32px !important;
-	height: 32px;
-	display: inline-block;
-	text-decoration: none;
-	position: relative;
-	top: 2px;
+  line-height: 32px !important;
+  height: 32px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  top: 2px;
 }
 
 .github-link p img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* home screen */
 
 .content-column {
-	p {
-		font-style: italic;
-		margin-top: 8px;
-		margin-bottom: 8px;
-	}
-	dl {
-		dt {
-			margin-top: 4px;
-			margin-bottom: 4px;
-			font-size: 16px;
-		}
-		dd {
-			margin-top: 4px;
-			margin-bottom: 8px;
-			margin-left: 16px;
-			font-style: italic;
-			font-size: 14px;
-			color: #555;
-		}
-	}
+  p {
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  dl {
+    dt {
+      margin-top: 4px;
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+    dd {
+      margin-top: 4px;
+      margin-bottom: 8px;
+      margin-left: 16px;
+      font-style: italic;
+      font-size: 14px;
+      color: #555;
+    }
+  }
 }
 
 /* Nette defaults */
 
 #ajax-spinner {
-	margin: 15px 0 0 15px;
-	padding: 13px;
-	background: white url('../images/spinner.gif') no-repeat 50% 50%;
-	font-size: 0;
-	z-index: 123456;
-	display: none;
+  margin: 15px 0 0 15px;
+  padding: 13px;
+  background: white url('../images/spinner.gif') no-repeat 50% 50%;
+  font-size: 0;
+  z-index: 123456;
+  display: none;
 }
 
 div.flash {
-	color: black;
-	background: #FFF9D7;
-	border: 1px solid #E2C822;
-	padding: 1em;
-	margin: 1em 0;
+  color: black;
+  background: #FFF9D7;
+  border: 1px solid #E2C822;
+  padding: 1em;
+  margin: 1em 0;
 }
 
 a[href^="error:"] {
-	background: red;
-	color: white;
+  background: red;
+  color: white;
 }
 
 form th, form td {
-	vertical-align: top;
-	font-weight: normal;
+  vertical-align: top;
+  font-weight: normal;
 }
 
 form th {
-	text-align: right;
+  text-align: right;
 }
 
 form .required label {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 form .error {
-	color: #D00;
-	font-weight: bold;
+  color: #D00;
+  font-weight: bold;
 }
 
 html.js .jshidden {
-	display: none;
+  display: none;
+}
+
+/* From https://github.com/simonwhitaker/github-fork-ribbon-css */
+/* Left will inherit from right (so we don't need to duplicate code */
+.github-fork-ribbon {
+  /* The right and left lasses determine the side we attach our banner to */
+  position: absolute;
+
+  /* Add a bit of padding to give some substance outside the "stitching" */
+  padding: 2px 0;
+
+  /* Set the base colour */
+  background-color: #a00;
+
+  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)), to(rgba(0, 0, 0, 0.15)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#000000', EndColorStr='#000000');
+
+  /* Add a drop shadow */
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+
+  z-index: 9999;
+}
+
+.github-fork-ribbon a,
+.github-fork-ribbon a:hover {
+  /* Set the font */
+  font-family: Collegiate, 'Fira Code', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+
+  /* Set the text properties */
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  /* Set the geometry. If you fiddle with these you'll also need to tweak the top and right values in #github-fork-ribbon. */
+  width: 200px;
+  line-height: 20px;
+
+  /* Set the layout properties */
+  display: inline-block;
+  padding: 2px 0;
+
+  /* Add "stitching" effect */
+  border-width: 1px 0;
+  border-style: dotted;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.github-fork-ribbon-wrapper {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 9999;
+}
+
+.github-fork-ribbon-wrapper.fixed {
+  position: fixed;
+}
+
+.github-fork-ribbon-wrapper.left {
+  left: 0;
+}
+
+.github-fork-ribbon-wrapper.right {
+  right: 0;
+}
+
+.github-fork-ribbon-wrapper.left-bottom {
+  position: fixed;
+  top: inherit;
+  bottom: 0;
+  left: 0;
+}
+
+.github-fork-ribbon-wrapper.right-bottom {
+  position: fixed;
+  top: inherit;
+  bottom: 0;
+  right: 0;
+}
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+  top: 42px;
+  right: -43px;
+
+  /* Rotate the banner 45 degrees */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.github-fork-ribbon-wrapper.left .github-fork-ribbon {
+  top: 42px;
+  left: -43px;
+
+  /* Rotate the banner -45 degrees */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
+  top: 80px;
+  left: -43px;
+
+  /* Rotate the banner -45 degrees */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
+  top: 80px;
+  right: -43px;
+
+  /* Rotate the banner -45 degrees */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
